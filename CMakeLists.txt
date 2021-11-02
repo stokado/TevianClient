@@ -5,3 +5,4 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_subdirectory ("Manager")
 add_subdirectory ("TevianClient")
+add_subdirectory ("TevianClientCLI")

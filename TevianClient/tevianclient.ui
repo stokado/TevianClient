@@ -197,6 +197,9 @@ QScrollBar:horizontal {
       <property name="widgetResizable">
        <bool>true</bool>
       </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
       <widget class="QWidget" name="scrollAreaWidgetContents">
        <property name="geometry">
         <rect>
@@ -227,11 +230,17 @@ QScrollBar:horizontal {
         </property>
         <item>
          <widget class="CustomView" name="graphicsView">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="sizeAdjustPolicy">
+           <enum>QAbstractScrollArea::AdjustToContents</enum>
+          </property>
           <property name="dragMode">
            <enum>QGraphicsView::ScrollHandDrag</enum>
           </property>
           <property name="transformationAnchor">
-           <enum>QGraphicsView::AnchorUnderMouse</enum>
+           <enum>QGraphicsView::NoAnchor</enum>
           </property>
          </widget>
         </item>
@@ -266,7 +275,8 @@ QScrollBar:horizontal {
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="actionOpen"/>
+   <addaction name="actionOpenDirectory"/>
+   <addaction name="actionOpenFiles"/>
    <addaction name="actionFaceReco"/>
    <addaction name="actionPrevFile"/>
    <addaction name="actionNextFile"/>
@@ -297,16 +307,16 @@ QScrollBar:horizontal {
     <bool>false</bool>
    </property>
   </widget>
-  <action name="actionOpen">
+  <action name="actionOpenFiles">
    <property name="icon">
     <iconset resource="resources.qrc">
-     <normaloff>:/resources/recources/folder_open.png</normaloff>:/resources/recources/folder_open.png</iconset>
+     <normaloff>:/resources/recources/file-folder-data-document-study-paper-explorer-5-21650.png</normaloff>:/resources/recources/file-folder-data-document-study-paper-explorer-5-21650.png</iconset>
    </property>
    <property name="text">
-    <string>Open</string>
+    <string>Open files</string>
    </property>
    <property name="toolTip">
-    <string>Open folder</string>
+    <string>Open files</string>
    </property>
   </action>
   <action name="actionFaceReco">
@@ -352,6 +362,18 @@ QScrollBar:horizontal {
    </property>
    <property name="toolTip">
     <string>Next File</string>
+   </property>
+  </action>
+  <action name="actionOpenDirectory">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/recources/folder_open.png</normaloff>:/resources/recources/folder_open.png</iconset>
+   </property>
+   <property name="text">
+    <string>OpenDirectory</string>
+   </property>
+   <property name="toolTip">
+    <string>Open directory with images</string>
    </property>
   </action>
  </widget>

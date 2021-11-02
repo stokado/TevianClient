@@ -32,16 +32,19 @@ public:
     ~TevianClient();
 
 private slots:
-    void on_actionOpen_triggered();
+    void on_actionOpenFiles_triggered();
+    void on_actionOpenDirectory_triggered();
     void on_actionFaceReco_triggered();
     void on_actionNextFile_triggered();
     void on_actionPrevFile_triggered();
     void on_facesReceived(QVector<MyRect>);
-    void on_updateImage();
+    void on_updateRect();
+    void on_updateView();
 
 signals:
     void signal_passFileName(QString);
-    void signal_updateImage();
+    void signal_updateRect();
+    void signal_updateView();
 
 private:
     Ui::TevianClient *ui;

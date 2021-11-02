@@ -1,4 +1,4 @@
-#include <qobject>
+#include <qobject.h>
 #include <qtestsupport_core.h>
 
 #include "manager.h"

@@ -23,9 +23,9 @@ target_link_libraries(${PROJECT_NAME} PUBLIC Qt5::Widgets Qt5::Gui Manager)
 
 set_target_properties (${PROJECT_NAME}
 		PROPERTIES
-			ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/install/lib"
-			LIBRARY_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/install/lib"
-			RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/install/bin"
+			ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/install/TevianClient/lib"
+			LIBRARY_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/install/TevianClient/lib"
+			RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/install/TevianClient/bin"
 )
 
 if(WIN32)

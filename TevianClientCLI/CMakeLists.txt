@@ -16,8 +16,6 @@ target_link_libraries(${PROJECT_NAME} PUBLIC Qt5::Core Manager)
 
 set_target_properties (${PROJECT_NAME}
 		PROPERTIES
-			ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/install/ClientCLI/lib"
-			LIBRARY_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/install/ClientCLI/lib"
 			RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/install/ClientCLI/bin"
 )
 

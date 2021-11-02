@@ -23,7 +23,6 @@ target_link_libraries (${PROJECT_NAME}
 
 set_target_properties (${PROJECT_NAME}
 		PROPERTIES
-			ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/install/TevianClient/lib"
-			LIBRARY_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/install/TevianClient/lib"
-			RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/install/TevianClient/bin"
+			ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/install/lib"
+			LIBRARY_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/install/lib"
 )

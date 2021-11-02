@@ -1,0 +1,6 @@
+install/
+.vs/
+Faces/
+CMakeSettings.json
+out/
+build/

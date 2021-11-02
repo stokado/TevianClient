@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="resources">
+    <file>recources/arrow_left.png</file>
+    <file>recources/arrow_right.png</file>
+    <file>recources/face_reco.png</file>
+    <file>recources/folder_open.png</file>
+  </qresource>
+</RCC>
